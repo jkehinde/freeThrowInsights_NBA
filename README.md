@@ -1,4 +1,4 @@
-# freeThrowInsights_NBA
+# Free Throw Insights NBA
 In this project we look at the top highest paid NBA players from 2005-2015. The aim is calculate the: 
    * Free Throw Attempts per game 
    * Accuracy of Free Throws
