@@ -56,7 +56,7 @@ DerrickRose_FT <- c(146,146,146,197,259,476,194,0,27,152)
 DwayneWade_FT <- c(629,432,354,590,534,494,235,308,189,284)
 
 
-# 2. Converts Freethrows to matrix
+# Converts Freethrows to matrix
 
 FreeThrows <- rbind(KobeBryant_FT,JoeJohnson_FT,LeBronJames_FT,CarmeloAnthony_FT,
                     DwightHoward_FT,ChrisBosh_FT,ChrisPaul_FT,KevinDurant_FT,
@@ -95,7 +95,8 @@ rm(KobeBryant_FTA,JoeJohnson_FTA,LeBronJames_FTA,
 colnames(FreeThrowAttempts) <- Seasons
 rownames(FreeThrowAttempts) <- Players
 
-# View our FreeThrowAttempts matrix
+
+# View the FreeThrowAttempts matrix
 FreeThrowAttempts
 
 
@@ -124,6 +125,8 @@ myplot(FreeThrowAttempts/Games)
 # he does not attack the basket to draw fouls and tend to settle for the 3 
 # We will check this in the player style section below 
 
+
+
 # 2.Free Throw Accuracy
 myplot(FreeThrows/FreeThrowAttempts) 
 
@@ -138,9 +141,9 @@ myplot(FreeThrows/FreeThrowAttempts)
 
 
 # 3.Players playing style 
-# we will need to exclude free throws from the points, This will tell us the shots
-# they like taking 
+# we will need to exclude free throws from the points. 
+# We will be able to see if the like to shoot 3's or make 2 pointers 
 myplot((Points - FreeThrows) /FieldGoals)
 
 # We can look at joe johnson and you can see in the last 5 years he has started 
-# shooting more 3's. This exaplains why his free attempts per game were so the lowest
+# shooting more 3's. This exaplains why his free attempts per game was so the low
