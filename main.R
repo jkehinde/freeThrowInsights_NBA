@@ -140,7 +140,7 @@ myplot(FreeThrows/FreeThrowAttempts)
 
 
 
-# 3.Players playing style 
+# 3.Players playing style
 # we will need to exclude free throws from the points. 
 # We will be able to see if the like to shoot 3's or make 2 pointers 
 myplot((Points - FreeThrows) /FieldGoals)
